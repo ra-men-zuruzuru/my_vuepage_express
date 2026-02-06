@@ -1,5 +1,6 @@
 import { Router } from "express";
 import express from "express";
+
 import { jsonget } from "../services/jsonget.js";
 import { insertComments } from "../db/commentRepo.js"
 
@@ -18,7 +19,7 @@ router.get('/jsonget', async (req, res) => {
     }
 })
 
-router.get('/comment', async (req, res) => {
+router.post('/comment', async (req, res) => {
     const { comment } = req.body;
 
     if (typeof comment !== 'string' || comment.trim() === '') {

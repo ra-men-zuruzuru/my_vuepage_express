@@ -10,7 +10,8 @@
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
     "express": "5.1.0",
-    "serverless-http": "^4.0.0"
+    "serverless-http": "^4.0.0",
+    "vercel": "^50.12.3"
   },
   "devDependencies": {
     "@types/express": "5.0.0",

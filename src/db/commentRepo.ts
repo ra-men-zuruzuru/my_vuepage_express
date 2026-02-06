@@ -1,5 +1,5 @@
 import { neon } from '@neondatabase/serverless';
-
+import type { VercelRequest, VercelResponse } from "@vercel/node";
 
 const sql = neon(`${process.env.DATABASE_URL}`);
 
@@ -10,4 +10,6 @@ export async function insertComments(data: string) {
     // Insert the comment from the form into the Postgres database
     await sql`INSERT INTO comments (comment) VALUES (${comment})`;
 }
+
+
 
