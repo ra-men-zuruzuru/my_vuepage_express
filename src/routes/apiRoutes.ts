@@ -1,11 +1,7 @@
 import { Router } from "express";
-import express from "express";
 
 import { jsonget } from "../services/jsonget.js";
 import { insertComments } from "../db/commentRepo.js"
-
-const app = express();
-app.use(express.json());
 
 const router = Router()
 
